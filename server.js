@@ -57,7 +57,7 @@ app.put("/api/items/:id", async (req, res) => {
 // DELETE
 app.delete("/api/items/:id", async (req, res) => {
   await Item.findByIdAndDelete(req.params.id);
-  res.json({ message: "Deleted" });
+  res.json({ message: "Deleted..." });
 });
 
 // 4. Start server
